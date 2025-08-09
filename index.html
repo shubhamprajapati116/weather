@@ -27,6 +27,7 @@
             <div>
               <p class="humidity">50%</p>
               <p>humidity</p>
+              <p> shubham</p>
             </div>
           </div>
           <div class="col">
@@ -41,8 +42,7 @@
     </div>
     <script>
       const apikey = "41203056939b92b48cff1b3ce161c9c2";
-      const apiurl =
-        "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+      const apiurl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
       const searchbox = document.querySelector(".search input");
       const searchbtn = document.querySelector(".search button");
@@ -62,7 +62,7 @@
           document.querySelector(".humidity").innerHTML =
             data.main.humidity + "%";
           document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
-
+             
           const weatherType = data.weather[0].main.toLowerCase();
 
           if (weatherType === "clouds") {
