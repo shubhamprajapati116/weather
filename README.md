@@ -8,4 +8,4 @@ Shows real-time weather data of any city using the OpenWeatherMap API.
 - OpenWeatherMap API
 
 ## 🌐 Live Demo
-[Click here](https://your-live-link.com)
+[https://shubhamprajapati116.github.io/weather/)
