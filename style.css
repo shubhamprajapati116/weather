@@ -63,10 +63,11 @@ body {
 }
 .details {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;   /* ✅ mobile me neeche line me aa jayenge */
+  gap: 10px;
+  margin-top: 20px;
 }
 .col {
   display: flex;
@@ -105,7 +106,14 @@ width: 100%;
   border-radius: 10px;
   width: 100%;
 }
-.wind{
-  flex-direction: column;
-}
+.details {
+    flex-direction: column;  /* chhoti screen par ek ke niche ek */
+    align-items: stretch;
+    
+  }
+
+  .details .col {
+    width: 100%;   /* full width le lega */
+    padding-left: 150px;
+  }
 }
