@@ -91,5 +91,18 @@ body {
   font-size: 14px;
   margin-top: 10px;
   display: none;
-  padding: 0%;
+}
+@media (max-width: 600px) {
+  .search{
+    flex-direction: column; 
+    gap: 10px; 
+     /* mobile ke liye change */
+}
+.search .input{
+width: 100%;
+}
+.search .button{
+  border-radius: 10px;
+  width: 100%;
+}
 }
